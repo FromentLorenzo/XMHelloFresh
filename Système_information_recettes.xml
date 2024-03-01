@@ -1,0 +1,82 @@
+<XMHelloFresh>
+    <Recettes>
+        <Recette id="1">
+            <Nom> Mousse au chocolat </Nom>
+            <Nombre_de_personnes> 6 </Nombre_de_personnes>
+            <Ingrédients>
+                <Ingredient idIngrédient="1">
+                    <Quantité>200</Quantité>
+                    <Unité>g</Unité>
+                </Ingredient>
+                <Ingredient idIngrédient="2">
+                    <Quantité>4</Quantité>
+                    <Unité></Unité>
+                </Ingredient>
+                <Ingredient idIngrédient="3">
+                    <Quantité>100</Quantité>
+                    <Unité>g</Unité>
+                </Ingredient>
+            </Ingrédients>
+            <Image>https://img.cuisineaz.com/1280x720/2017/05/09/i125843-mousse-au-chocolat-au-lait.jpeg</Image>
+        </Recette>
+    </Recettes>
+    <Menus>
+        <Menu id="1">
+            <Nom>Repas de Saint-Valentin</Nom>
+            <Prix>60</Prix>
+            <Recettes_Du_Menu>
+                <Recette_Du_Menu idRecette="1"/>
+            </Recettes_Du_Menu>
+        </Menu>
+    </Menus>
+    <Ingrédients>
+        <Ingrédient id="1">
+            <Nom>Chocolat noir</Nom>
+        </Ingrédient>
+        <Ingrédient id="2">
+            <Nom>Oeuf</Nom>
+        </Ingrédient>
+        <Ingrédient id="3">
+            <Nom>Sucre</Nom>
+        </Ingrédient>
+    </Ingrédients>
+    <Commandes>
+        <Commande id="1">
+            <Utilisateur idUtilisateur="1"/>
+            <Date>01/03/2024</Date>
+            <Heure>11:20</Heure>
+            <Adresse>2 Allée des Perdrix Antibes</Adresse>
+            <Numéro_de_téléphone> 0652526012 </Numéro_de_téléphone>
+            <Livreur idLivreur="1"/>
+            <Statut>En Cours de Livraison</Statut>
+            <Prix>60</Prix>
+            <Menu idMenu="1"/>
+        </Commande>
+    </Commandes>
+    <Commentaires>
+        <Commentaire>
+            <Utilisateur idUtilisateur="1"/>
+            <Note>4/5</Note>
+            <Commande idCommande="1"/>
+            <Commentaire> Nous nous sommes régalé avec ma femme. La mousse était un peu salé</Commentaire>
+        </Commentaire>
+    </Commentaires>
+    <Utilisateurs>
+        <Utilisateur>
+            <Nom>Froment</Nom>
+            <Prénom>Lorenzo</Prénom>
+            <Adresse>Allée des Perdrix, Antibes</Adresse>
+            <Numéro_de_téléphone> 0652526012 </Numéro_de_téléphone>
+            <Adresse_mail> lorenzo.froment@gmail.com </Adresse_mail>
+            <Mot_de_passe_hashé> JdzZh23h3hife4iZ </Mot_de_passe_hashé>
+        </Utilisateur>
+    </Utilisateurs>
+    <Livreurs>
+      <Livreur id="1">
+        <Nom> Delias </Nom>
+        <Prénom> Théo </Prénom>
+        <Numéro_de_téléphone> 0609234822 </Numéro_de_téléphone>
+        <Moyen_de_transport> Trotinette</Moyen_de_transport>
+      </Livreur>  
+    </Livreurs>
+</XMHelloFresh>
