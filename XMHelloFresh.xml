@@ -1,22 +1,15 @@
-<XMHelloFresh>
+<?xml version="1.0" encoding="UTF-8"?>
+<XMHelloFresh xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="XMHelloFresh.xsd">
+               
     <Recettes>
         <Recette id="1">
             <Nom> Mousse au chocolat </Nom>
             <Nombre_de_personnes> 6 </Nombre_de_personnes>
-            <Ingrédients>
-                <Ingredient idIngrédient="1">
-                    <Quantité>200</Quantité>
-                    <Unité>g</Unité>
-                </Ingredient>
-                <Ingredient idIngrédient="2">
-                    <Quantité>4</Quantité>
-                    <Unité></Unité>
-                </Ingredient>
-                <Ingredient idIngrédient="3">
-                    <Quantité>100</Quantité>
-                    <Unité>g</Unité>
-                </Ingredient>
-            </Ingrédients>
+            <Ingredients>
+                <Ingredient idIngredient="1"/>
+                <Ingredient idIngredient="2"/>
+                <Ingredient idIngredient="3"/>
+            </Ingredients>
             <Image>https://img.cuisineaz.com/1280x720/2017/05/09/i125843-mousse-au-chocolat-au-lait.jpeg</Image>
         </Recette>
     </Recettes>
@@ -25,21 +18,29 @@
             <Nom>Repas de Saint-Valentin</Nom>
             <Prix>60</Prix>
             <Recettes_Du_Menu>
-                <Recette_Du_Menu idRecette="1"/>
+                <Recette_Du_Menu idRecette="1">
+                    <Nom>Mousse au chocolat</Nom>
+                </Recette_Du_Menu>
             </Recettes_Du_Menu>
         </Menu>
     </Menus>
-    <Ingrédients>
-        <Ingrédient id="1">
+    <Ingredients>
+        <Ingredient id="1">
             <Nom>Chocolat noir</Nom>
-        </Ingrédient>
-        <Ingrédient id="2">
+            <Quantité>200</Quantité>
+            <Unité>g</Unité>
+        </Ingredient>
+        <Ingredient id="2">
             <Nom>Oeuf</Nom>
-        </Ingrédient>
-        <Ingrédient id="3">
+            <Quantité>6</Quantité>
+            <Unité></Unité>
+        </Ingredient>
+        <Ingredient id="3">
             <Nom>Sucre</Nom>
-        </Ingrédient>
-    </Ingrédients>
+            <Quantité>100</Quantité>
+            <Unité>g</Unité>
+        </Ingredient>
+    </Ingredients>
     <Commandes>
         <Commande id="1">
             <Utilisateur idUtilisateur="1"/>
@@ -58,11 +59,11 @@
             <Utilisateur idUtilisateur="1"/>
             <Note>4/5</Note>
             <Commande idCommande="1"/>
-            <Commentaire> Nous nous sommes régalé avec ma femme. La mousse était un peu salé</Commentaire>
+            <Texte> Nous nous sommes régalé avec ma femme. La mousse était un peu salé</Texte>
         </Commentaire>
     </Commentaires>
     <Utilisateurs>
-        <Utilisateur>
+        <Utilisateur id="1">
             <Nom>Froment</Nom>
             <Prénom>Lorenzo</Prénom>
             <Adresse>Allée des Perdrix, Antibes</Adresse>
