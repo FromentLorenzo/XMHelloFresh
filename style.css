@@ -1,39 +1,54 @@
 body {
-    font-family: Arial, sans-serif;
-  }
-  
-  .recipe {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin-bottom: 20px;
-  }
-  
-  h2 {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4; /* Couleur de fond */
+    color: #333; /* Couleur du texte */
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #05931f; /* Couleur du titre principal */
+    font-family: 'Georgia', serif; /* Changer la police du titre */
+    padding: 20px 0;
+    background-color: #fff; /* Fond blanc pour le titre */
+    border-bottom: 2px solid #ddd; /* Bordure inférieure pour le titre */
+}
+
+.recipe-container {
+    column-count: 2;
+    max-width: 1200px; /* Largeur maximale du conteneur des recettes */
+    margin: 20px auto; /* Centrage du conteneur */
+}
+
+.recipe {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0 10px 20px;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+    break-inside: avoid; /* Éviter la coupure des recettes entre les colonnes */
+}
+
+
+
+h2 {
     color: #333;
-  }
-  
-  img {
+}
+
+img {
     max-width: 100%;
     height: auto;
-  }
-  
-  ul {
+    border-radius: 8px; /* Coins arrondis pour les images */
+}
+
+ul {
     list-style-type: none;
     padding: 0;
-  }
-  
-  li {
+}
+
+li {
     margin-bottom: 5px;
-  }
-/* Ajoutez le style pour les recettes */
-.recipe {
-    width: 45%; /* Ajustez la largeur des recettes selon vos besoins */
-    display: inline-block;
-    margin: 10px;
-  }
-  
-  /* Ajoutez le style pour les deux colonnes */
-  .recipe-container {
-    column-count: 2;
-  }
-    
+}
