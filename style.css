@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .recipe {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    color: #333;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 5px;
+  }
+/* Ajoutez le style pour les recettes */
+.recipe {
+    width: 45%; /* Ajustez la largeur des recettes selon vos besoins */
+    display: inline-block;
+    margin: 10px;
+  }
+  
+  /* Ajoutez le style pour les deux colonnes */
+  .recipe-container {
+    column-count: 2;
+  }
+    
