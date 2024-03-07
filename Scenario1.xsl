@@ -9,7 +9,7 @@
     <html>
       <head>
         <title>Recettes et Ingrédients</title>
-        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <link rel="stylesheet" type="text/css" href="style1.css"/>
       </head>
       <body>
         <h1>Recettes et Ingrédients</h1>

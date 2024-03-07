@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="Scenario2.xsl"?>
+<XMHelloFresh xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="XMHelloFresh.xsd">
+               
+    <Recettes>
+        <Recette id="1">
+            <Nom> Mousse au chocolat </Nom>
+            <Nombre_de_personnes> 6 </Nombre_de_personnes>
+            <Ingredients>
+                <Ingredient idIngredient="1"/>
+                <Ingredient idIngredient="2"/>
+                <Ingredient idIngredient="3"/>
+            </Ingredients>
+            <EtapesDeRecette>
+                <Etape> Faire fondre le chocolat au bain marie </Etape>
+                <Etape> Séparer les blancs des jaunes d'oeufs </Etape>
+                <Etape> Mélanger le chocolat fondu avec les jaunes d'oeufs et le sucre </Etape>
+                <Etape> Monter les blancs en neige </Etape>
+                <Etape> Incorporer les blancs en neige au mélange chocolat-oeufs </Etape>
+                <Etape> Mettre au frais pendant 2h</Etape>
+            </EtapesDeRecette>
+            <Image>https://img.cuisineaz.com/1280x720/2017/05/09/i125843-mousse-au-chocolat-au-lait.jpeg</Image>
+        </Recette>
+        <Recette id="2">
+            <Nom> Tarte aux pommes </Nom>
+            <Nombre_de_personnes> 6 </Nombre_de_personnes>
+            <Ingredients>
+                <Ingredient idIngredient="4"/>
+                <Ingredient idIngredient="5"/>
+                <Ingredient idIngredient="3"/>
+                <Ingredient idIngredient="6"/>
+            </Ingredients>
+            <EtapesDeRecette>
+                <Etape> Préchauffer le four à 180°C </Etape>
+                <Etape> Etaler la pâte brisée dans un moule à tarte </Etape>
+                <Etape> Eplucher et couper les pommes en lamelles </Etape>
+                <Etape> Disposer les lamelles de pommes sur la pâte </Etape>
+                <Etape> Saupoudrer de sucre et de cannelle </Etape>
+                <Etape> Enfourner pendant 30 minutes </Etape>
+            </EtapesDeRecette>
+            <Image>https://assets.afcdn.com/recipe/20230127/139908_w1024h1024c1cx1059cy707cxt0cyt0cxb2119cyb1414.webp</Image>
+        </Recette>
+        <Recette id="3">
+            <Nom> Samossa boeuf</Nom>
+            <Nombre_de_personnes> 6 </Nombre_de_personnes>
+            <Ingredients>
+                <Ingredient idIngredient="7"/>
+                <Ingredient idIngredient="8"/>
+                <Ingredient idIngredient="9"/>
+                <Ingredient idIngredient="10"/>
+                <Ingredient idIngredient="11"/>
+            </Ingredients>
+            <EtapesDeRecette>
+                <Etape> Faire revenir l'oignon dans une poêle </Etape>
+                <Etape> Ajouter la viande hachée et les épices </Etape>
+                <Etape> Laisser cuire 10 minutes </Etape>
+                <Etape> Couper les feuilles de brick en deux </Etape>
+                <Etape> Disposer une cuillère à soupe de farce sur chaque demi-feuille </Etape>
+                <Etape> Plier les feuilles en triangle </Etape>
+                <Etape> Faire frire les samoussas dans de l'huile chaude </Etape>
+            </EtapesDeRecette>
+            <Image>https://www.ecomiam.com/images/Image/recette-Samoussas-de-boeuf-1-2.png</Image>
+        </Recette>
+        <Recette id="4">
+            <Nom>Nem au Poulet</Nom>
+            <Nombre_de_personnes> 6 </Nombre_de_personnes>
+            <Ingredients>
+                <Ingredient idIngredient="12"/>
+                <Ingredient idIngredient="8"/>
+                <Ingredient idIngredient="9"/>
+                <Ingredient idIngredient="10"/>
+                <Ingredient idIngredient="11"/>
+            </Ingredients>
+            <EtapesDeRecette>
+                <Etape> Faire revenir l'oignon dans une poêle </Etape>
+                <Etape> Ajouter le poulet et les épices </Etape>
+                <Etape> Laisser cuire 10 minutes </Etape>
+                <Etape> Disposer une cuillère à soupe de farce sur chaque feuille de brick </Etape>
+                <Etape> Rouler les feuilles en forme de nem </Etape>
+                <Etape> Faire frire les nems dans de l'huile chaude </Etape>
+            </EtapesDeRecette>
+            <Image>https://adc-dev-images-recipes.s3.eu-west-1.amazonaws.com/REP_jl_1187_nems_cambodgienne_sauce_chili.JPG</Image>
+        </Recette>
+        <Recette id="5">
+            <Nom>Salade de fruits</Nom>
+            <Nombre_de_personnes> 6 </Nombre_de_personnes>
+            <Ingredients>
+                <Ingredient idIngredient="13"/>
+                <Ingredient idIngredient="14"/>
+                <Ingredient idIngredient="15"/>
+                <Ingredient idIngredient="5"/>
+                <Ingredient idIngredient="16"/>
+            </Ingredients>
+            <EtapesDeRecette>
+                <Etape> Eplucher et couper les fruits en morceaux </Etape>
+                <Etape> Mélanger les fruits dans un saladier </Etape>
+                <Etape> Saupoudrer de sucre </Etape>
+            </EtapesDeRecette>
+            <Image>https://cdn.pratico-pratiques.com/app/uploads/sites/2/2018/08/29104341/salade-de-fruits.jpeg</Image>
+        </Recette>
+    </Recettes>
+    <Menus>
+        <Menu id="1">
+            <Nom>Repas de Saint-Valentin</Nom>
+            <Prix>60</Prix>
+            <Recettes_Du_Menu>
+                <Recette_Du_Menu idRecette="1">
+                    <Nom>Mousse au chocolat</Nom>
+                </Recette_Du_Menu>
+                <Recette_Du_Menu idRecette="3">
+                    <Nom>Samossa boeuf</Nom>
+                </Recette_Du_Menu>
+            </Recettes_Du_Menu>
+        </Menu>
+        <Menu id="2">
+            <Nom> Repas Asiatique</Nom>
+            <Prix>50</Prix>
+            <Recettes_Du_Menu>
+                <Recette_Du_Menu idRecette="3">
+                    <Nom>Samossa boeuf</Nom>
+                </Recette_Du_Menu>
+                <Recette_Du_Menu idRecette="4">
+                    <Nom>Nem au Poulet</Nom>
+                </Recette_Du_Menu>
+            </Recettes_Du_Menu>
+        </Menu>
+    </Menus>
+    <Ingredients>
+        <Ingredient id="1">
+            <Nom>Chocolat noir</Nom>
+            <Quantité>200</Quantité>
+            <Unité>g</Unité>
+        </Ingredient>
+        <Ingredient id="2">
+            <Nom>Oeuf</Nom>
+            <Quantité>6</Quantité>
+            <Unité></Unité>
+        </Ingredient>
+        <Ingredient id="3">
+            <Nom>Sucre</Nom>
+            <Quantité>100</Quantité>
+            <Unité>g</Unité>
+        </Ingredient>
+        <Ingredient id="4">
+            <Nom>Pâte brisée</Nom>
+            <Quantité>1</Quantité>
+            <Unité></Unité>
+        </Ingredient>
+        <Ingredient id="5">
+            <Nom>Pomme</Nom>
+            <Quantité>6</Quantité>
+            <Unité></Unité>
+        </Ingredient>
+        <Ingredient id="6">
+            <Nom>Cannelle</Nom>
+            <Quantité>1</Quantité>
+            <Unité>cuillère à café</Unité>
+        </Ingredient>
+        <Ingredient id="7">
+            <Nom>Boeuf haché</Nom>
+            <Quantité>300</Quantité>
+            <Unité>g</Unité>
+        </Ingredient>
+        <Ingredient id="8">
+            <Nom>Oignon</Nom>
+            <Quantité>1</Quantité>
+            <Unité></Unité>
+        </Ingredient>
+        <Ingredient id="9">
+            <Nom>Curry</Nom>
+            <Quantité>1</Quantité>
+            <Unité>cuillère à café</Unité>
+        </Ingredient>
+        <Ingredient id="10">
+            <Nom>Coriandre</Nom>
+            <Quantité>1</Quantité>
+            <Unité>cuillère à café</Unité>
+        </Ingredient>
+        <Ingredient id="11">
+            <Nom>Feuille de brick</Nom>
+            <Quantité>6</Quantité>
+            <Unité></Unité>
+        </Ingredient>
+        <Ingredient id="12">
+            <Nom>Poulet</Nom>
+            <Quantité>300</Quantité>
+            <Unité>g</Unité>
+        </Ingredient>
+        <Ingredient id="13">
+            <Nom>Fraise</Nom>
+            <Quantité>6</Quantité>
+            <Unité></Unité>
+        </Ingredient>
+        <Ingredient id="14">
+            <Nom>Banane</Nom>
+            <Quantité>6</Quantité>
+            <Unité></Unité>
+        </Ingredient>
+        <Ingredient id="15">
+            <Nom>Orange</Nom>
+            <Quantité>6</Quantité>
+            <Unité></Unité>
+        </Ingredient>
+        <Ingredient id="16">
+            <Nom>Sucre</Nom>
+            <Quantité>50</Quantité>
+            <Unité>g</Unité>
+        </Ingredient>
+
+    </Ingredients>
+    <Commandes>
+        <Commande id="1">
+            <Utilisateur idUtilisateur="1"/>
+            <Date>01/03/2024</Date>
+            <Heure>11:20</Heure>
+            <Adresse>2 Allée des Perdrix Antibes</Adresse>
+            <Numéro_de_téléphone> 0652526012 </Numéro_de_téléphone>
+            <Livreur idLivreur="1"/>
+            <Statut>En Cours de Livraison</Statut>
+            <Prix>60</Prix>
+            <Menu idMenu="1"/>
+        </Commande>
+        <Commande id="2">
+            <Utilisateur idUtilisateur="2"/>
+            <Date>01/03/2024</Date>
+            <Heure>11:20</Heure>
+            <Adresse>2 Chemin des Sables Antibes</Adresse>
+            <Numéro_de_téléphone> 0609234822 </Numéro_de_téléphone>
+            <Livreur idLivreur="2"/>
+            <Statut>En Cours de Livraison</Statut>
+            <Prix>50</Prix>
+            <Menu idMenu="2"/>
+        </Commande>
+    </Commandes>
+    <Commentaires>
+        <Commentaire>
+            <Utilisateur idUtilisateur="1"/>
+            <Note>4/5</Note>
+            <Commande idCommande="1"/>
+            <Texte> Nous nous sommes régalé avec ma femme. La mousse était un peu salé</Texte>
+        </Commentaire>
+        <Commentaire>
+            <Utilisateur idUtilisateur="2"/>
+            <Note>5/5</Note>
+            <Commande idCommande="2"/>
+            <Texte> Très bon repas, je recommande</Texte>
+        </Commentaire>
+    </Commentaires>
+    <Utilisateurs>
+        <Utilisateur id="1">
+            <Nom>Froment</Nom>
+            <Prénom>Lorenzo</Prénom>
+            <Adresse>Allée des Perdrix, Antibes</Adresse>
+            <Numéro_de_téléphone> 0652526012 </Numéro_de_téléphone>
+            <Adresse_mail> lorenzo.froment@gmail.com </Adresse_mail>
+            <Mot_de_passe_hashé> JdzZh23h3hife4iZ </Mot_de_passe_hashé>
+        </Utilisateur>
+        <Utilisateur id="2">
+            <Nom>Delias</Nom>
+            <Prénom>Théo</Prénom>
+            <Adresse>Chemin des Sables, Antibes</Adresse>
+            <Numéro_de_téléphone> 0609234822 </Numéro_de_téléphone>
+            <Adresse_mail>theo.delias@gmail.com</Adresse_mail>
+            <Mot_de_passe_hashé> JdzZh23h3hife4iZ </Mot_de_passe_hashé>
+        </Utilisateur>
+    </Utilisateurs>
+    <Livreurs>
+      <Livreur id="1">
+        <Nom> Delias </Nom>
+        <Prénom> Théo </Prénom>
+        <Numéro_de_téléphone> 0609234822 </Numéro_de_téléphone>
+        <Moyen_de_transport> Trotinette</Moyen_de_transport>
+      </Livreur>  
+      <Livreur id="2">
+        <Nom> Froment </Nom>
+        <Prénom> Lorenzo </Prénom>
+        <Numéro_de_téléphone> 0652526012 </Numéro_de_téléphone>
+        <Moyen_de_transport> Voiture</Moyen_de_transport>
+        </Livreur>
+    </Livreurs>
+</XMHelloFresh>

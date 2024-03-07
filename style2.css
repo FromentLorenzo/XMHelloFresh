@@ -1,0 +1,33 @@
+/* Style global */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 20px auto; /* Ajout de la marge sur les côtés */
+    max-width: 800px; /* Définir la largeur maximale */
+  }
+  
+  /* Style pour chaque commentaire */
+  .comment {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .comment h2 {
+    color: #05931f;
+    font-weight: bold;
+  }
+  
+  .comment p {
+    margin: 8px 0;
+  }
+  
+  /* Style pour l'en-tête */
+  h1 {
+    color: #05931f;
+    font-weight: bold;
+  }
+  
