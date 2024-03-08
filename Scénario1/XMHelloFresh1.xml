@@ -98,6 +98,7 @@
             </EtapesDeRecette>
             <Image>https://cdn.pratico-pratiques.com/app/uploads/sites/2/2018/08/29104341/salade-de-fruits.jpeg</Image>
         </Recette>
+        
     </Recettes>
     <Menus>
         <Menu id="1">
@@ -231,6 +232,50 @@
             <Prix>50</Prix>
             <Menu idMenu="2"/>
         </Commande>
+        <Commande id="3">
+            <Utilisateur idUtilisateur="2"/>
+            <Date>01/03/2024</Date>
+            <Heure>11:20</Heure>
+            <Adresse>2 Chemin des Sables Antibes</Adresse>
+            <Numéro_de_téléphone> 0609234822 </Numéro_de_téléphone>
+            <Livreur idLivreur="2"/>
+            <Statut>En Cours de Livraison</Statut>
+            <Prix>50</Prix>
+            <Menu idMenu="1"/>
+        </Commande>
+        <Commande id="4">
+            <Utilisateur idUtilisateur="3"/>
+            <Date>24/03/2024</Date>
+            <Heure>11:50</Heure>
+            <Adresse>2 Chemin des Sables Paris</Adresse>
+            <Numéro_de_téléphone> 0609237322 </Numéro_de_téléphone>
+            <Livreur idLivreur="2"/>
+            <Statut>En Cours de Livraison</Statut>
+            <Prix>50</Prix>
+            <Menu idMenu="1"/>
+        </Commande>
+        <Commande id="5">
+            <Utilisateur idUtilisateur="3"/>
+            <Date>24/03/2024</Date>
+            <Heure>11:50</Heure>
+            <Adresse>2 Chemin des Sables Paris</Adresse>
+            <Numéro_de_téléphone> 0609237322 </Numéro_de_téléphone>
+            <Livreur idLivreur="2"/>
+            <Statut>En Cours de Livraison</Statut>
+            <Prix>50</Prix>
+            <Menu idMenu="2"/>
+        </Commande>
+        <Commande id="6">
+            <Utilisateur idUtilisateur="3"/>
+            <Date>24/03/2024</Date>
+            <Heure>11:50</Heure>
+            <Adresse>2 Chemin des Sables Paris</Adresse>
+            <Numéro_de_téléphone> 0609237322 </Numéro_de_téléphone>
+            <Livreur idLivreur="2"/>
+            <Statut>En Cours de Livraison</Statut>
+            <Prix>50</Prix>
+            <Menu idMenu="2"/>
+        </Commande>
     </Commandes>
     <Commentaires>
         <Commentaire>
@@ -240,11 +285,36 @@
             <Texte> Nous nous sommes régalé avec ma femme. La mousse était un peu salé</Texte>
         </Commentaire>
         <Commentaire>
+            <Utilisateur idUtilisateur="3"/>
+            <Note>0/5</Note>
+            <Commande idCommande="6"/>
+            <Texte> Nous avons voulu donner une seconde chance au menu asiatique. Quelle erreur... Plus jamais XMHelloFresh, nous avons attrappé la leptospirose</Texte>
+        </Commentaire>
+        <Commentaire>
             <Utilisateur idUtilisateur="2"/>
             <Note>5/5</Note>
             <Commande idCommande="2"/>
             <Texte> Très bon repas, je recommande</Texte>
         </Commentaire>
+        <Commentaire>
+            <Utilisateur idUtilisateur="2"/>
+            <Note>2/5</Note>
+            <Commande idCommande="3"/>
+            <Texte> La mousse avait un goût de Terre</Texte>
+        </Commentaire>
+        <Commentaire>
+            <Utilisateur idUtilisateur="3"/>
+            <Note>1/5</Note>
+            <Commande idCommande="4"/>
+            <Texte> Nous avons reçu un rat mort dans le carton, à fuir 🤮🤢</Texte>
+        </Commentaire>
+        <Commentaire>
+            <Utilisateur idUtilisateur="3"/>
+            <Note>0/5</Note>
+            <Commande idCommande="5"/>
+            <Texte> Le poulet était périmé, nous avons fini à l'hôpital avec un ver solitaire. Nous allons vous faire un procés </Texte>
+        </Commentaire>
+        
     </Commentaires>
     <Utilisateurs>
         <Utilisateur id="1">
@@ -262,6 +332,30 @@
             <Numéro_de_téléphone> 0609234822 </Numéro_de_téléphone>
             <Adresse_mail>theo.delias@gmail.com</Adresse_mail>
             <Mot_de_passe_hashé> JdzZh23h3hife4iZ </Mot_de_passe_hashé>
+        </Utilisateur>
+        <Utilisateur id="3">
+            <Nom>Dupont</Nom>
+            <Prénom>Jean</Prénom>
+            <Adresse>Rue de la picholine</Adresse>
+            <Numéro_de_téléphone> 0609685735 </Numéro_de_téléphone>
+            <Adresse_mail>jeanDupont@gmail.com</Adresse_mail>
+            <Mot_de_passe_hashé> JdzZh23h3hife4iZ </Mot_de_passe_hashé>
+        </Utilisateur>
+        <Utilisateur id="4">
+            <Nom>Pondu</Nom>
+            <Prénom>Jeanne</Prénom>
+            <Adresse>Rue fontête</Adresse>
+            <Numéro_de_téléphone> 0609635735 </Numéro_de_téléphone>
+            <Adresse_mail>jeannePontdu@gmail.com</Adresse_mail>
+            <Mot_de_passe_hashé> FIUnfezfjzeA </Mot_de_passe_hashé>
+        </Utilisateur>
+        <Utilisateur id="5">
+            <Nom>Larguier</Nom>
+            <Prénom>Tristan</Prénom>
+            <Adresse>Rue des alégories</Adresse>
+            <Numéro_de_téléphone> 0609637535 </Numéro_de_téléphone>
+            <Adresse_mail>LarguierTristan@gmail.com</Adresse_mail>
+            <Mot_de_passe_hashé> hFZonfEG </Mot_de_passe_hashé>
         </Utilisateur>
     </Utilisateurs>
     <Livreurs>

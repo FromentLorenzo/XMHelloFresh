@@ -3,8 +3,8 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
     color: #333;
-    margin: 20px auto; /* Ajout de la marge sur les côtés */
-    max-width: 800px; /* Définir la largeur maximale */
+    margin: 20px auto; 
+    max-width: 800px; 
   }
   
   /* Style pour chaque commentaire */
@@ -28,6 +28,12 @@ body {
   /* Style pour l'en-tête */
   h1 {
     color: #05931f;
+    font-weight: bold;
+  }
+
+  /*style pour id NomMenu*/
+  #NomMenu{
+    color: #000000;
     font-weight: bold;
   }
   
