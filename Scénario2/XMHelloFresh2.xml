@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="Scenario2.xsl"?>
 <XMHelloFresh xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="XMHelloFresh.xsd">
-               
+
     <Recettes>
         <Recette id="1">
             <Nom> Mousse au chocolat </Nom>
@@ -98,7 +98,7 @@
             </EtapesDeRecette>
             <Image>https://cdn.pratico-pratiques.com/app/uploads/sites/2/2018/08/29104341/salade-de-fruits.jpeg</Image>
         </Recette>
-        
+
     </Recettes>
     <Menus>
         <Menu id="1">
@@ -284,7 +284,7 @@
             <Commande idCommande="1"/>
             <Texte> Nous nous sommes régalé avec ma femme. La mousse était un peu salé</Texte>
         </Commentaire>
-    
+
         <Commentaire>
             <Utilisateur idUtilisateur="2"/>
             <Note>5/5</Note>
@@ -315,7 +315,7 @@
             <Commande idCommande="6"/>
             <Texte> Nous avons voulu donner une seconde chance au menu asiatique. Quelle erreur... Plus jamais XMHelloFresh, nous avons attrappé la leptospirose</Texte>
         </Commentaire>
-        
+
     </Commentaires>
     <Utilisateurs>
         <Utilisateur id="1">
@@ -365,7 +365,7 @@
         <Prénom> Théo </Prénom>
         <Numéro_de_téléphone> 0609234822 </Numéro_de_téléphone>
         <Moyen_de_transport> Trotinette</Moyen_de_transport>
-      </Livreur>  
+      </Livreur>
       <Livreur id="2">
         <Nom> Froment </Nom>
         <Prénom> Lorenzo </Prénom>

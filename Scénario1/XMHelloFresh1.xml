@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="Scenario1.xsl"?>
 <XMHelloFresh xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="XMHelloFresh.xsd">
-               
+
     <Recettes>
         <Recette id="1">
             <Nom> Mousse au chocolat </Nom>
@@ -98,7 +98,7 @@
             </EtapesDeRecette>
             <Image>https://cdn.pratico-pratiques.com/app/uploads/sites/2/2018/08/29104341/salade-de-fruits.jpeg</Image>
         </Recette>
-        
+
     </Recettes>
     <Menus>
         <Menu id="1">
