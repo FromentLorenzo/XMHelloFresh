@@ -57,7 +57,7 @@
                         </xsl:for-each>
                     </div>
                 </div>
-                <div style="clear:both;"></div> 
+                <div style="clear:both;"></div>
             </div>
         </xsl:if>
     </xsl:template>
