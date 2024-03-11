@@ -1,4 +1,4 @@
-/* Style global */
+
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
@@ -7,7 +7,6 @@ body {
     max-width: 800px; 
   }
   
-  /* Style pour chaque commentaire */
   .comment {
     border: 1px solid #ccc;
     padding: 10px;
@@ -25,13 +24,11 @@ body {
     margin: 8px 0;
   }
   
-  /* Style pour l'en-tête */
   h1 {
     color: #05931f;
     font-weight: bold;
   }
 
-  /*style pour id NomMenu*/
   #NomMenu{
     color: #000000;
     font-weight: bold;

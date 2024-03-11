@@ -1,4 +1,4 @@
-/* Style global */
+
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
@@ -7,7 +7,6 @@ body {
     max-width: 800px;
 }
 
-/* Style pour chaque commande */
 .command {
     border: 1px solid #ccc;
     padding: 20px;
@@ -17,13 +16,11 @@ body {
     overflow: hidden;
 }
 
-/* Style pour la partie gauche */
 .left-content {
     width: 50%;
     float: left;
 }
 
-/* Style pour la partie droite */
 .right-content {
     width: calc(50% - 20px);
     float: right;
@@ -33,7 +30,6 @@ body {
 }
 
 
-/* Style pour le titre de la commande */
 .command h2 {
     color: #05931f;
     font-size: 22px;
@@ -42,12 +38,10 @@ body {
     margin-bottom: 10px;
 }
 
-/* Style pour les informations de la commande */
 .command p {
     margin: 8px 0;
 }
 
-/* Style pour le conteneur des images */
 .image-container {
     display: flex;
     flex-wrap: wrap;
@@ -55,7 +49,6 @@ body {
     margin-bottom: 10px;
 }
 
-/* Style pour chaque image */
 .image-container img {
     width: 120px;
     height: 120px;
@@ -66,7 +59,6 @@ body {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Style pour le titre du menu */
 .right-content h3 {
     color: #333;
     font-size: 18px;
@@ -74,17 +66,14 @@ body {
     margin-bottom: 10px;
 }
 
-/* Style pour le contenu du menu */
 .right-content ul {
     margin-bottom: 40px;
 }
 
-/* Style pour chaque élément de contenu du menu */
 .right-content ul li {
     margin-bottom: 5px;
 }
 
-/* Style pour l'en-tête */
 h1 {
     color: #05931f;
     font-weight: bold;

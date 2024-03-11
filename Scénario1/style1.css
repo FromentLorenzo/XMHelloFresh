@@ -1,24 +1,24 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4; /* Couleur de fond */
-    color: #333; /* Couleur du texte */
+    background-color: #f4f4f4; 
+    color: #333; 
     margin: 0;
     padding: 0;
 }
 
 h1 {
     text-align: center;
-    color: #05931f; /* Couleur du titre principal */
-    font-family: 'Georgia', serif; /* Changer la police du titre */
+    color: #05931f; 
+    font-family: 'Georgia', serif; 
     padding: 20px 0;
-    background-color: #fff; /* Fond blanc pour le titre */
-    border-bottom: 2px solid #ddd; /* Bordure inférieure pour le titre */
+    background-color: #fff; 
+    border-bottom: 2px solid #ddd; 
 }
 
 .recipe-container {
     column-count: 2;
-    max-width: 1200px; /* Largeur maximale du conteneur des recettes */
-    margin: 20px auto; /* Centrage du conteneur */
+    max-width: 1200px; 
+    margin: 20px auto; 
 }
 
 .recipe {
@@ -29,7 +29,7 @@ h1 {
     margin: 0 10px 20px;
     padding: 20px;
     transition: transform 0.3s ease-in-out;
-    break-inside: avoid; /* Éviter la coupure des recettes entre les colonnes */
+    break-inside: avoid; 
 }
 
 
@@ -41,7 +41,7 @@ h2 {
 img {
     max-width: 100%;
     height: auto;
-    border-radius: 8px; /* Coins arrondis pour les images */
+    border-radius: 8px; 
 }
 
 ul {
