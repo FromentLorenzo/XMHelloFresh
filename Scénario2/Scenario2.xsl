@@ -13,6 +13,7 @@
       </head>
       <body>
         <h1>Commentaires</h1>
+        <p>Total des Commentaires : <xsl:value-of select="count(//Commentaire)" /></p>
         <h3>Notes 0⭐</h3>
         <xsl:for-each select="//Commentaire[Note = 0]">
           
