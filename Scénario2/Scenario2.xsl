@@ -18,21 +18,18 @@
         <xsl:for-each select="//Commentaire[Note = 0]">
           
           <xsl:apply-templates select=".">
-            <xsl:sort select="Note"/>
           </xsl:apply-templates>
         </xsl:for-each>
         <h3>Notes 1⭐</h3>
         <xsl:for-each select="//Commentaire[Note = 1]">
           
           <xsl:apply-templates select=".">
-            <xsl:sort select="Note"/>
           </xsl:apply-templates>
         </xsl:for-each>
         <h3>Notes 2⭐</h3>
         <xsl:for-each select="//Commentaire[Note = 2]">
           
           <xsl:apply-templates select=".">
-            <xsl:sort select="Note"/>
           </xsl:apply-templates>
         </xsl:for-each>
 
@@ -40,7 +37,6 @@
         <xsl:for-each select="//Commentaire[Note = 3]">
           
           <xsl:apply-templates select=".">
-            <xsl:sort select="Note"/>
           </xsl:apply-templates>
         </xsl:for-each>
 
@@ -48,7 +44,6 @@
         <xsl:for-each select="//Commentaire[Note = 4]">
           
           <xsl:apply-templates select=".">
-            <xsl:sort select="Note"/>
           </xsl:apply-templates>
         </xsl:for-each>
 
@@ -56,7 +51,6 @@
         <xsl:for-each select="//Commentaire[Note = 5]">
           
           <xsl:apply-templates select=".">
-            <xsl:sort select="Note"/>
           </xsl:apply-templates>
         </xsl:for-each>
 

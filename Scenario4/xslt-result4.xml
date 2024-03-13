@@ -1,115 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Livreurs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <Livreur id="1">
-        <Nom/>
-        <Prénom/>
-        <Numéro_de_téléphone/>
-        <Moyen_de_transport/>
-        <Commandes>1</Commandes>
-    </Livreur>
-    <Livreur id="2">
-        <Nom/>
-        <Prénom/>
-        <Numéro_de_téléphone/>
-        <Moyen_de_transport/>
-        <Commandes>234567</Commandes>
-    </Livreur>
-    <Commande>
-        <Utilisateur>
-            <Utilisateur idUtilisateur="1"/>
-        </Utilisateur>
-        <Date>01/03/2024</Date>
-        <Heure>11:20</Heure>
-        <Adresse>2 Allée des Perdrix Antibes</Adresse>
-        <Numéro_de_téléphone> 0652526012 </Numéro_de_téléphone>
-        <Statut>En Cours de Livraison</Statut>
-        <Prix>60</Prix>
-        <Menu>
-            <Menu idMenu="1"/>
-        </Menu>
-    </Commande>
-    <Commande>
-        <Utilisateur>
-            <Utilisateur idUtilisateur="2"/>
-        </Utilisateur>
-        <Date>01/03/2024</Date>
-        <Heure>11:20</Heure>
-        <Adresse>2 Chemin des Sables Antibes</Adresse>
-        <Numéro_de_téléphone> 0609234822 </Numéro_de_téléphone>
-        <Statut>En Cours de Livraison</Statut>
-        <Prix>50</Prix>
-        <Menu>
-            <Menu idMenu="2"/>
-        </Menu>
-    </Commande>
-    <Commande>
-        <Utilisateur>
-            <Utilisateur idUtilisateur="2"/>
-        </Utilisateur>
-        <Date>01/03/2024</Date>
-        <Heure>11:20</Heure>
-        <Adresse>2 Chemin des Sables Antibes</Adresse>
-        <Numéro_de_téléphone> 0609234822 </Numéro_de_téléphone>
-        <Statut>En Cours de Livraison</Statut>
-        <Prix>50</Prix>
-        <Menu>
-            <Menu idMenu="1"/>
-        </Menu>
-    </Commande>
-    <Commande>
-        <Utilisateur>
-            <Utilisateur idUtilisateur="3"/>
-        </Utilisateur>
-        <Date>24/03/2024</Date>
-        <Heure>11:50</Heure>
-        <Adresse>2 Chemin des Sables Paris</Adresse>
-        <Numéro_de_téléphone> 0609237322 </Numéro_de_téléphone>
-        <Statut>En Cours de Livraison</Statut>
-        <Prix>50</Prix>
-        <Menu>
-            <Menu idMenu="1"/>
-        </Menu>
-    </Commande>
-    <Commande>
-        <Utilisateur>
-            <Utilisateur idUtilisateur="3"/>
-        </Utilisateur>
-        <Date>24/03/2024</Date>
-        <Heure>11:50</Heure>
-        <Adresse>2 Chemin des Sables Paris</Adresse>
-        <Numéro_de_téléphone> 0609237322 </Numéro_de_téléphone>
-        <Statut>En Cours de Livraison</Statut>
-        <Prix>50</Prix>
-        <Menu>
-            <Menu idMenu="2"/>
-        </Menu>
-    </Commande>
-    <Commande>
-        <Utilisateur>
-            <Utilisateur idUtilisateur="3"/>
-        </Utilisateur>
-        <Date>24/03/2024</Date>
-        <Heure>11:50</Heure>
-        <Adresse>2 Chemin des Sables Paris</Adresse>
-        <Numéro_de_téléphone> 0609237322 </Numéro_de_téléphone>
-        <Statut>En Cours de Livraison</Statut>
-        <Prix>50</Prix>
-        <Menu>
-            <Menu idMenu="2"/>
-        </Menu>
-    </Commande>
-    <Commande>
-        <Utilisateur>
-            <Utilisateur idUtilisateur="5"/>
-        </Utilisateur>
-        <Date>24/03/2024</Date>
-        <Heure>11:50</Heure>
-        <Adresse>2 Chemin des Sables Paris</Adresse>
-        <Numéro_de_téléphone> 0609237322 </Numéro_de_téléphone>
-        <Statut>En Cours de Livraison</Statut>
-        <Prix>50</Prix>
-        <Menu>
-            <Menu idMenu="1"/>
-        </Menu>
-    </Commande>
-</Livreurs>
+<LivreursLivraisons xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Scenario4.xsd">
+    <LivreurLivraisons>
+       <Nom> Delias </Nom>
+       <Prénom> Théo </Prénom>
+       <Livraisons>
+          <Livraison>
+             <Date>01/03/2024</Date>
+             <Heure>11:20</Heure>
+             <Adresse>2 Allée des Perdrix Antibes</Adresse>
+          </Livraison>
+       </Livraisons>
+    </LivreurLivraisons>
+    <LivreurLivraisons>
+       <Nom> Froment </Nom>
+       <Prénom> Lorenzo </Prénom>
+       <Livraisons>
+          <Livraison>
+             <Date>01/03/2024</Date>
+             <Heure>11:20</Heure>
+             <Adresse>2 Chemin des Sables Antibes</Adresse>
+          </Livraison>
+          <Livraison>
+             <Date>01/03/2024</Date>
+             <Heure>11:20</Heure>
+             <Adresse>2 Chemin des Sables Antibes</Adresse>
+          </Livraison>
+          <Livraison>
+             <Date>24/03/2024</Date>
+             <Heure>11:50</Heure>
+             <Adresse>2 Chemin des Sables Paris</Adresse>
+          </Livraison>
+          <Livraison>
+             <Date>24/03/2024</Date>
+             <Heure>11:50</Heure>
+             <Adresse>2 Chemin des Sables Paris</Adresse>
+          </Livraison>
+          <Livraison>
+             <Date>24/03/2024</Date>
+             <Heure>11:50</Heure>
+             <Adresse>2 Chemin des Sables Paris</Adresse>
+          </Livraison>
+          <Livraison>
+             <Date>24/03/2024</Date>
+             <Heure>11:50</Heure>
+             <Adresse>2 Chemin des Sables Paris</Adresse>
+          </Livraison>
+       </Livraisons>
+    </LivreurLivraisons>
+ </LivreursLivraisons>

@@ -1,117 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
-    <!-- Livreurs -->
-    <xs:element name="Livreurs">
-        <xs:complexType>
-            <xs:sequence>
-                <xs:element ref="Livreur" maxOccurs="unbounded"/>
-            </xs:sequence>
-        </xs:complexType>
-    </xs:element>
+  <!-- Déclaration du format de date -->
+  <xs:simpleType name="dateType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="\d{2}/\d{2}/\d{4}"/>
+    </xs:restriction>
+  </xs:simpleType>
 
-    <!-- Livreur -->
-    <xs:element name="Livreur">
-        <xs:complexType>
-            <xs:sequence>
-                <xs:element name="Nom" type="xs:string"/>
-                <xs:element name="Prénom" type="xs:string"/>
-                <xs:element name="Numéro_de_téléphone" type="xs:string"/>
-                <xs:element name="Moyen_de_transport"></xs:element>
-                <xs:element name="Commandes">
-                    <xs:complexType>
-                        <xs:sequence>
-                            <xs:element name="Commande" type="xs:integer" minOccurs="0" maxOccurs="unbounded"/>
-                        </xs:sequence>
-                    </xs:complexType>
-                </xs:element>
-            </xs:sequence> 
-            <xs:attribute name="id" type="xs:integer"/>
-        </xs:complexType>
-    </xs:element>
+  <!-- Déclaration du format d'heure -->
+  <xs:simpleType name="heureType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="\d{2}:\d{2}"/>
+    </xs:restriction>
+  </xs:simpleType>
 
-    <!-- Commandes -->
-    <xs:element name="Commandes">
-        <xs:complexType>
-            <xs:sequence>
-                <xs:element ref="Commande" maxOccurs="unbounded"/>
-            </xs:sequence>
-        </xs:complexType>
-    </xs:element>
+  <!-- Déclaration du format d'adresse -->
+  <xs:simpleType name="adresseType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
 
-    <!-- Commande -->
-    <xs:element name="Commande">
-        <xs:complexType>
-            <xs:sequence>
-                <xs:element name="Utilisateur">
-                    <xs:complexType>
-                        <xs:attribute name="idUtilisateur" type="xs:integer" use="required"/>
-                    </xs:complexType>
-                </xs:element>
-                <xs:element name="Date" type="xs:string"/>
-                <xs:element name="Heure" type="xs:string"/>
-                <xs:element name="Adresse" type="xs:string"/>
-                <xs:element name="Numéro_de_téléphone" type="xs:string"/>
-                <xs:element name="Statut" type="xs:string"/>
-                <xs:element name="Prix" type="xs:integer"/>
-                <xs:element name="Menu" type="xs:integer"/>
-            </xs:sequence>
-            <xs:attribute name="id" type="xs:integer"/>
-        </xs:complexType>
-    </xs:element>
+  <!-- Déclaration du format d'adresse complet -->
+  <xs:complexType name="livraisonType">
+    <xs:sequence>
+      <xs:element name="Date" type="dateType"/>
+      <xs:element name="Heure" type="heureType"/>
+      <xs:element name="Adresse" type="adresseType"/>
+    </xs:sequence>
+  </xs:complexType>
 
-    <!-- Utilisateurs -->
-    <xs:element name="Utilisateurs">
-        <xs:complexType>
-            <xs:sequence>
-                <xs:element ref="Utilisateur" maxOccurs="unbounded"/>
-            </xs:sequence>
-        </xs:complexType>
-    </xs:element>
+  <!-- Déclaration du format d'une liste de livraisons -->
+  <xs:complexType name="livraisonsType">
+    <xs:sequence>
+      <xs:element name="Livraison" type="livraisonType" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
 
-    <!-- Utilisateur -->
-    <xs:element name="Utilisateur">
-        <xs:complexType>
-            <xs:sequence>
-                <xs:element name="Nom" type="xs:string"/>
-                <xs:element name="Prénom" type="xs:string"/>
-                <xs:element name="Adresse" type="xs:string"/>
-                <xs:element name="Numéro_de_téléphone" type="xs:string"/>
-                <xs:element name="Adresse_mail" type="xs:string"/>
-                <xs:element name="Mot_de_passe_hashé" type="xs:string"/>
-            </xs:sequence>
-            <xs:attribute name="id" type="xs:integer" use="required"/>
-        </xs:complexType>
-    </xs:element>
+  <!-- Déclaration du format d'un livreur avec ses livraisons -->
+  <xs:complexType name="livreurLivraisonsType">
+    <xs:sequence>
+      <xs:element name="Nom" type="xs:string"/>
+      <xs:element name="Prénom" type="xs:string"/>
+      <xs:element name="Livraisons" type="livraisonsType"/>
+    </xs:sequence>
+  </xs:complexType>
 
-    <!-- Menus -->
-    <xs:element name="Menus">
-        <xs:complexType>
-            <xs:sequence>
-                <xs:element ref="Menu" maxOccurs="unbounded"/>
-            </xs:sequence>
-        </xs:complexType>
-    </xs:element>
+  <!-- Déclaration du format de la racine LivreursLivraisons -->
+  <xs:complexType name="livreursLivraisonsType">
+    <xs:sequence>
+      <xs:element name="LivreurLivraisons" type="livreurLivraisonsType" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
 
-    <!-- Menu -->
-    <xs:element name="Menu">
-        <xs:complexType>
-            <xs:sequence>
-                <xs:element name="Nom" type="xs:string"/>
-            </xs:sequence>
-            <xs:attribute name="id" type="xs:integer"/>
-        </xs:complexType>
-    </xs:element>
-
-    <xs:element name="NewXMHelloFresh">
-        <xs:complexType>
-            <xs:sequence>
-                <xs:element ref="Livreurs"/>
-                <xs:element ref="Commandes"/>
-                <xs:element ref="Utilisateurs"/>
-                <xs:element ref="Menus"/>
-            </xs:sequence>
-        </xs:complexType>
-    </xs:element>
+  <!-- Racine du schéma -->
+  <xs:element name="LivreursLivraisons" type="livreursLivraisonsType"/>
 
 </xs:schema>
