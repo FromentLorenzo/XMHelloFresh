@@ -13,8 +13,6 @@ E
 Scénario2/style2.css,d\5\d528b5dc95fe0ea3ff7f9de41ccdaa262875368a
 D
 Scenario3/style3.css,6\9\69f5b887a0db36caff78f04f85630832d102d4ac
-J
-Scenario4/XMHelloFresh.xsd,b\7\b7f7e5dbc2f13e4e25c6b6d6797431d01e4cd656
 G
 Scenario4/Scenario4.xsl,f\2\f2b0d4121b74a965ec087d5781b19c09175ff1a2
 G
